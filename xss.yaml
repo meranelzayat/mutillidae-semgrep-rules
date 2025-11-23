@@ -1,0 +1,6 @@
+rules:
+  - id: detect-xss-echo
+    pattern: echo $VAR;
+    message: "Possible XSS – unescaped output"
+    severity: WARNING
+    languages: [php]
