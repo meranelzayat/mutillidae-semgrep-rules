@@ -1,0 +1,6 @@
+rules:
+  - id: sql-injection-catch-all
+    pattern: $_GET
+    message: "Direct GET access → likely SQL Injection in this project"
+    languages: [php]
+    severity: WARNING
