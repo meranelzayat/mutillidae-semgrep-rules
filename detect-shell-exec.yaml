@@ -1,0 +1,7 @@
+rules:
+  - id: detect-shell-exec
+    patterns:
+      - pattern: shell_exec(...)
+    message: "Possible Command Injection (shell_exec)"
+    severity: WARNING
+    languages: [php]
